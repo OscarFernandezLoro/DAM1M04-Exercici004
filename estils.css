@@ -934,3 +934,43 @@ header {
   text-align: center;
   border-top: 1px solid #e0e0e0;
 }
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Contenedores de tarjetas */
+    .vector-cards,
+    .tools-cards,
+    .designs-grid,
+    .text-cards,
+    .effects-info,
+    .features-grid,
+    .exclusive-icons,
+    .mac-tech-grid,
+    .featured-grid {
+        flex-direction: column;  /* Apilar tarjetas verticalmente */
+        align-items: center;
+        gap: 20px;               /* Reducimos el espacio entre ellas */
+    }
+
+    /* Cada tarjeta individual */
+    .card,
+    .tool-card,
+    .light-box,
+    .small-card,
+    .info-box,
+    .feature-card {
+        width: 90%;              /* Ocupan casi todo el ancho */
+        max-width: 400px;        /* Para no estirarse demasiado en tablets */
+    }
+}
