@@ -974,3 +974,97 @@ header {
         max-width: 400px;        /* Para no estirarse demasiado en tablets */
     }
 }
+@media (max-width: 768px) {
+    /* Títulos principales */
+    h1 {
+        font-size: 1.6rem;   /* antes 2rem o más */
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.8rem;   /* antes 2.2rem o más */
+        text-align: center;
+    }
+
+    /* Párrafos */
+    p {
+        font-size: 1rem;     /* antes 1.1rem */
+        line-height: 1.5;    /* más cómodo de leer */
+    }
+
+    /* Botones */
+    .buy-btn,
+    .form-btn,
+    .floating-btn,
+    .secondary-btn {
+        padding: 10px 18px;  /* menos espacio para que quepan */
+        font-size: 0.95rem;  /* tamaño legible en móvil */
+    }
+}
+@media (max-width: 768px) {
+    /* Imágenes */
+    .hero-content img,
+    .designs-grid img,
+    .effects-info img,
+    .mac-tech-grid img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Videos */
+    iframe,
+    video {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;  /* Apila logo y menú */
+        align-items: center;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .menu {
+        flex-direction: column;  /* Enlaces uno debajo del otro */
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .menu .left a,
+    .menu .right a {
+        display: block;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .buy-btn {
+        margin-top: 10px;
+        width: 80%; /* Botón centrado y más pequeño */
+    }
+}
+@media (max-width: 768px) {
+    .footer-links {
+        grid-template-columns: 1fr;  /* Una columna */
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer-column {
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
